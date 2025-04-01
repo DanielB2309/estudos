@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária</title>
+    <link rel="icon" type="image/png" href="./imagens/bandeira.png">
+    <style>
+        /* Estilo para organizar as imagens e ingredientes */
+        .prato-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Faz com que as imagens se ajustem em diferentes linhas se necessário */
+            gap: 20px;
+        }
+
+        .prato-item {
+            text-align: center;
+            width: 250px; /* Largura fixa para as imagens */
+        }
+
+        .prato-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Bordas arredondadas nas imagens */
+        }
+
+        .prato-item p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <center>
+                <table cellspacing="20" cellpadding="15">
+                    <thead>
+                        <tr>
+                            <td><a href="index.html">Home</a></td>
+                            <td><a href="turismo.html">Pontos Turisticos</a></td>
+                            <td><a href="contato.html">Contato</a></td>
+                            <td><a href="culinaria.html">Culinária</a></td>
+                        </tr>
+                    </thead>
+                </table>
+            </center>
+        </nav>
+    </header>
+
+    <section id="culinaria">
+        <h1 align="center">Pratos Típicos</h1>
+
+        <div class="prato-container">
+            <!-- Prato 1: Feijoada -->
+            <div class="prato-item">
+                <img src="./imagens/tacaca.jpeg" alt="Tacacá">
+                <h2>Tacacá</h2>
+                <p><h2>Ingredientes:</h2> 
+                    <li align="left">4 xícaras (chá) de água</li>
+                    <li align="left">1/2 xícara (chá) de polvilho azedo (ou goma de mandioca)</li>
+                    <li align="left">1 colher (chá) de sal</li>
+                    <li align="left">500 g de camarão salgado (seco)</li>
+                    <li align="left">4 folhas de chicória</li>
+                    <li align="left">4 dentes de alho bem amassados</li>
+                    <li align="left">3 pimentas-de-cheiro</li>
+                    <li align="left">2 maços de jambu</li>
+                    <li align="left">2 litros de tucupi</li></p>
+                
+            </div>
+
+            <!-- Prato 2: Moqueca -->
+            <div class="prato-item">
+                <img src="./imagens/rabada no tucupi.jpeg" alt="Rabada no Tucupi">
+                <h3>Rabada no Tucupi</h3>
+                <p><h3>Ingredientes</h3>
+                    <li align="left">1 e 1/2 Kg de rabo de boi</li>
+                    <li align="left">1 cebola grande</li>
+                    <li align="left">6 pimentinhas de cheiro sem semente</li>
+                    <li align="left">4 maços de chicória</li>
+                    <li align="left">2 cubos de caldo de galinha</li>
+                    <li align="left">tempero completo e pimenta-do-reino a gosto</li>
+                    <li align="left">2 litros de tucupi temperado</li>
+                    <li align="left">5 dentes de alho</li>
+                    <li align="left">15 maços de jambu</li>
+                    <li align="left">2 maços de cheiro verde</li>
+                    <li align="left">Corante alimentício (ou colorau)</li>
+                    <li align="left">1 kg de camarão limpo e seco</li>
+                </p>
+            </div>
+            <!-- Prato 3: Acarajé -->
+            <div class="prato-item">
+                <img src="./imagens/Quibe de Arroz.jpeg" alt="Quibe de Arroz">
+                <h4>Quibe de Arroz</h4>
+                <p><h4>Ingredientes</h4>
+                    <h4>Para a Massa:</h4>
+                    <li align="left">500 g arroz (de preferência arroz quebrado)</li>
+                    <li align="left">2 colheres de chá colorau</li>
+                    <li align="left">Sal a gosto</li>
+                    <h4>Para o Recheio:</h4>
+                    <li align="left">500 g carne bovina moída</li>
+                    <li align="left">1 dente alho ralado</li>
+                    <li align="left">1/2 cebola picada</li>
+                    <li align="left">1 pimentinha-de-cheiro picada</li>
+                    <li align="left">1 colher de chá colorau</li>
+                    </p>
+            </div>
+
+            <!-- Prato 4: Pão de Queijo -->
+            <div class="prato-item">
+                <img src="./imagens/Bolo de Pupunha.jpeg" alt="Bolo de Pupunha">
+                <h5>Bolo de Pupunha</h5>
+                <p><h5>Ingredientes</h5>
+                    <h5>Para a Massa:</h5>
+                    <li align="left">2 xícaras de pupunha cozida passada no processador ou em uma peneira</li>
+                    <li align="left">8 colheres de farinha de trigo sem fermento</li>
+                    <li align="left">2 xícaras de leite de coco ou leite comum</li>
+                    <li align="left">1 colher (sopa) de fermento</li>
+                    <li align="left">250g de manteiga</li>
+                    <li align="left">6 ovos</li>
+                    <li align="left">1 colher de sopa de fermento</li>
+                    <li align="left">2 xícaras de açúcar</li>
+
+                </p>
+            </div>
+        </div>
+
+        <h3 align="center">Vídeo de Preparo</h3>
+        <video poster="./videos/quibedearroz.mp4" controls width="400px">
+            <source src="./videos/quibedearroz.mp4" type="video/mp4"/>
+            </video>
+    </section>
+</body>
+</html>
