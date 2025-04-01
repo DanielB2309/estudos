@@ -1,0 +1,45 @@
+1. largura=float(input("Digite a largura do retangulo"))
+altura=float(input("Digite a altura do retangulo"))
+
+area= largura * altura
+perimetro= 2 * (largura + altura)
+
+print(f"A area do retangulo é: {area}")
+print(f"O perimetro do retangulo é: {perimetro}")
+
+2. Salário com aumento
+salario = float(input("Qual o salário do funcionário? R$"))
+novo = salario + (salario * 5/100)
+print("Um funcionário recebia R${:.2f}, com 5% de aumento, passa a receber R${:.2f}".format(salario,novo))
+
+3.Distancia entre duas cidades
+distancia=float(input("Qual a distancia entre as duas cidades? KM"))
+tempo=float(input("Qual o tempo de viagem? Horas"))
+velocidade_media= distancia / tempo
+print(f"A velocidade média do carro foi: {velocidade_media:.2f}km/h")
+
+4.Formula de Baskhara
+a = int(input("Insira o valor do coeficiente a: "))
+b = int(input("Insira o valor do coeficiente b: "))
+c = int(input("Insira o valor do coeficiente c: "))
+#delta = b^2 - 4ac
+delta = b**2 - 4*a*c
+print("O valor de delta é:", delta)
+# x=(-b +- raiz(delta))/2a
+x1 = (-b - delta**0.5) / (2*a)
+x2 = (-b + delta**0.5) / (2*a)
+print("O valor de x1 é: ", x1)
+print("O valor de x2 é: ", x2)
+
+
+5. Converter dolares em reais
+cotacao_dolar=float(input("Digite a cotação do dolar"))
+valor_dolares=float(input("Digite o valor em dolares:"))
+valores_reais=valor_dolares * cotacao_dolar
+print(f"O valor {valor_dolares} dólares equivale a R${valores_reais:.2f} reais")
+
+6.#Valor gasto por um cliente no restaurante
+valor_gasto=float(input("Valor gasto pelo cliente no ComaBem: R$"))
+gorjeta=valor_gasto * 0.10
+total_a_pagar= valor_gasto + gorjeta
+print(f"O valor total gasto pelo cliente no ComaBem, incluindo 10%, é R${total_a_pagar:.2f}")
