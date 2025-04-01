@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo</title>
+    <link rel="icon" type="image/png" href="./imagens/bandeira.png">
+    <style>
+        /* Estilo para a galeria de imagens */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap; /* Faz as imagens se ajustarem em várias linhas, se necessário */
+            justify-content: center; /* Centraliza as imagens horizontalmente */
+            gap: 20px; /* Espaço entre as imagens */
+        }
+
+        .image-item {
+            flex: 1 1 30%; /* Cada imagem ocupa 30% do espaço disponível */
+            max-width: 300px; /* Limita o tamanho máximo das imagens */
+            text-align: center; /* Centraliza as legendas */
+        }
+
+        .image-item img {
+            width: 100%; /* Faz a imagem preencher a largura do container */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        .image-item p {
+            margin-top: 10px; /* Espaço entre a imagem e a descrição */
+            font-size: 14px; /* Ajuste do tamanho da fonte */
+            color: #555; /* Cor da descrição */
+        }
+
+        /* Estilo para a tabela de "Outros Pontos Turísticos" */
+        .pontos-turisticos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .pontos-turisticos-table, .pontos-turisticos-table th, .pontos-turisticos-table td {
+            border: 1px solid #ddd;
+        }
+
+        .pontos-turisticos-table th, .pontos-turisticos-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pontos-turisticos-table th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para a navegação */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <center>
+                <table cellspacing="20" cellpadding="15">
+                    <thead>
+                        <tr>
+                            <td> <a href="index.html">Home</a></td>
+                            <td> <a href="turismo.html">Pontos Turisticos</a></td>
+                            <td> <a href="contato.html">Contato</a></td>
+                            <td> <a href="culinaria.html">Culinária</a></td>
+                        </tr>
+                    </thead>
+                </table>
+            </center>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <section>
+            <article>
+                <h1 align="center">Alguns Pontos Turisticos Famosos do Acre</h1>
+                
+                <div class="image-gallery">
+                    <div class="image-item">
+                        <h3>Museu da Borracha</h3>
+                        <img src="./imagens/museu da borracha.jpeg" alt="Museu da Borracha" width="300">
+                        <p>Localizado em Rio Branco, o Museu da Borracha é um importante ponto turístico que preserva a história da borracha e sua importância para a economia do Acre.</p>
+                    </div>
+                    <div class="image-item">
+                        <h3>Palácio Rio Branco</h3>
+                        <img src="./imagens/Palacio Rio Branco.jpeg" alt="Palácio Rio Branco" width="350">
+                        <p>O Palácio Rio Branco é um dos marcos históricos de Rio Branco, funcionando como um espaço cultural e governamental. Foi inaugurado em 1930.</p>
+                    </div>
+                    <div class="image-item">
+                        <h3>Parque Nacional da Serra do Divisor</h3>
+                        <img src="./imagens/Parque Nacional.jpeg" alt="Parque Nacional da Serra do Divisor" width="400">
+                        <p>Situado na região oeste do Acre, o Parque Nacional da Serra do Divisor é um importante destino para ecoturismo e preservação da biodiversidade da Amazônia.</p>
+                    </div>
+                </div>
+
+                <br><br><br><br>
+
+                <h4 align="center">Outros Pontos Turísticos</h4>
+
+                <!-- Tabela de Pontos Turísticos com a classe para estilo específico -->
+                <table class="pontos-turisticos-table">
+                    <thead>
+                        <tr>
+                            <th>Ponto Turístico</th>
+                            <th>Localização</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Casa de Chico Mendes</td>
+                            <td>Rio Branco</td>
+                            <td>Histórico</td>
+                        </tr>
+                        <tr>
+                            <td>Catedral Nossa Senhora de Nazaré</td>
+                            <td>Rio Branco</td>
+                            <td>Religioso</td>
+                        </tr>
+                        <tr>
+                            <td>Ponte da Integração Brasil-Peru</td>
+                            <td>Brasil/Peru</td>
+                            <td>Arquitetônico</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
