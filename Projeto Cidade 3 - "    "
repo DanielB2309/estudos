@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" type="image/png" href="./imagens/bandeira.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <center>
+                <table cellspacing="20" cellpadding="15">
+                    <thead>
+                        <tr>
+                            <td> <a href="index.html">Home</a></td>
+                            <td> <a href="turismo.html">Pontos Turisticos</a></td>
+                            <td> <a href="contato.html">Contato</a></td>
+                            <td> <a href="culinaria.html">Culinária</a></td>
+                        </tr>
+                    </thead>
+
+                </table>
+            </center>
+            </nav>
+    </header>
+
+    <form action="enviar_dados"  method="post">
+        <label for="nome">Digite seu nome</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+        <br><br>
+        <label for="email">Digite seu email</label><br>
+        <input type="email" id="email" nome="email" placeholder="Digite seu email"><br>
+        <br><br>
+        <label for="numero">Digite seu telefone</label><br>
+        <input type="text" id="telefone" nome="telefone" placeholder="Digite seu número"><br>
+        <br><br>
+        <label for="escolha">O que achou do site?</label><br>
+        <input type="checkbox" name="avaliar" value="top">TOP
+        <input type="checkbox" name="avaliar" value="bom">BOM
+        <input type="checkbox" name="avaliar" value="ruim">RUIM
+        <input type="checkbox" name="avaliar" value="péssimo">PÉSSIMO
+        <br><br>
+        <label for="indique">Você indicaria o site?</label>
+        <br><br>
+        <input type="radio" name="indique" value="Sim" checked>Sim, Indicaria
+        <input type="radio" name="indique" value="Não">Infelizmente, Não Indicaria
+        <br><br>
+        <label for="nota">Qual a nota do site:</label>
+        <select>
+            <option value="0">NOTA ZERO</option>
+            <option value="1">NOTA UM</option>
+            <option value="2">NOTA DOIS</option>
+            <option value="3" cheked>NOTA TRÊS</option>
+            <br><br>
+        </select>
+        <br><br>
+        <textarea name="sugestao" rows="10" cols="10" placeholder="Digite sua opinião" maxlength="42">
+
+        </textarea>
+        <br><br>
+        <input type="submit" value="ENVIAR" onclick="alert('ENVIADO')">
+        <input type="reset"  value="RESETAR">
+
+    </form>
+</body>
+</html>
